@@ -76,6 +76,8 @@
 
 - [oh my zsh](https://github.com/ohmyzsh/ohmyzsh)  美化shell
 
+- [asciinema ](https://asciinema.org/)  是一个免费的开源解决方案，用于记录终端会话并在网络上共享它们。对终端命令进行录制并分享，不是录屏哈。
+
 
 ## 项目
 
@@ -91,10 +93,13 @@
 
 ### github
 
-- [README美化](https://repobeats.axiom.co/)
-- 分享有关您的项目活动的有趣统计数据，从代码到问题
-  
-- 随着时间的推移轻松跟踪项目贡献
+- [Repobeats](https://repobeats.axiom.co/)
+
+  Repobeats 是一种将贡献者分析嵌入到 GitHub 项目的 README.md 中的方法
+
+  使用 Repobeats，您的项目的贡献者和用户可以清楚、漂亮地了解您的项目如何随着时间的推移而发展。
+
+- [github 趋势](https://www.githubtrends.io)  统计过去一年中你的代码贡献趋势及编程语言趋势，并在README中展示。
 
 ## 博客
 
