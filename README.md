@@ -66,6 +66,16 @@
 
 - [HeySpace](https://github.com/louisun/HeySpace)
 
+  HeySpace 是一款帮你优化排版，提升阅读体验的「命令行工具」。
+
+  - 核心功能：**中英文之间添加空格**
+  - 去除连续两个以上的空行
+  - 兼容 Markdown 格式
+  - 支持剪贴板输入输出，复制内容处理后可直接粘贴
+  - **支持文件、目录的输入和输出**；支持文件备份
+
+- [oh my zsh](https://github.com/ohmyzsh/ohmyzsh)  美化shell
+
 
 ## 项目
 
@@ -78,4 +88,23 @@
 - [代码安全指南](https://github.com/Tencent/secguide)
 
   面向开发人员梳理的代码安全指南，旨在梳理 API 层面的风险点并提供详实可行的安全编码方案。
+
+### github
+
+- [README美化](https://repobeats.axiom.co/)
+- 分享有关您的项目活动的有趣统计数据，从代码到问题
+  
+- 随着时间的推移轻松跟踪项目贡献
+
+## 博客
+
+- [一言](https://hitokoto.cn/#)  为网站提供一句话服务，一句话，可以是动漫中的台词，也可以是网络上的各种小段子。
+
+## 其他
+
+- [后盾人](https://doc.houdunren.com/)  后盾人在线文档，前端学习及vscode插件推荐
+- [猫爪导航🐱](https://v2fy.com/)  各种工具及资源的推荐
+- [正则大全](https://any86.github.io/any-rule/)  提供常见的正则匹配
+
+- [BT下载Tracker](https://trackerslist.com/#/zh)  提高BT下载速度
 
