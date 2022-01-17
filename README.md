@@ -44,6 +44,23 @@
 
   Neverinstall 是一个云平台，可将任何桌面应用程序带入浏览器，不用在本地安装，不受硬件限制，真正可以从任何地方访问。免费用户一次只能运行一个应用。
 
+- [omni](https://github.com/alyssaxuu/omni)
+
+  Chrome 最强大的界面 🔥，一款浏览器插件。
+
+  借助 Omni，您可以像专业人士一样使用 Chrome。使用简单的命令界面管理选项卡、书签、浏览器历史记录、执行各种操作等等。
+  
+  🗄 切换、打开、关闭和搜索您的标签
+  📚 浏览和管理您的书签
+  🔍 搜索您的浏览历史记录
+  ⚡️ 50 多项提高生产力的措施
+  🔮 用于过滤和执行更多操作的特殊命令
+  🧩 与 Notion、Figma、Docs、Asana 的集成......
+  ⌨️ 静音、固定、书签等操作的快捷方式...
+  ⚙️ 有助于解决浏览问题的高级设置
+  🌙黑暗模式
+  ...... 以及更多 - 全部免费且无需登录！
+
 ### Redis
 
 - [**Another Redis Desktop Manager**](https://gitee.com/qishibo/AnotherRedisDesktopManager)  redis桌面管理工具，可以运行于Linux、Windows、Mac三大平台。
