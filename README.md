@@ -108,7 +108,7 @@
 
   面向开发人员梳理的代码安全指南，旨在梳理 API 层面的风险点并提供详实可行的安全编码方案。
 
-### github
+### github美化
 
 - [Repobeats](https://repobeats.axiom.co/)
 
@@ -118,7 +118,7 @@
 
 - [github 趋势](https://www.githubtrends.io)  统计过去一年中你的代码贡献趋势及编程语言趋势，并在README中展示。
 
-## 博客
+## 博客美化
 
 - [一言](https://hitokoto.cn/#)  为网站提供一句话服务，一句话，可以是动漫中的台词，也可以是网络上的各种小段子。
 
@@ -127,6 +127,19 @@
 - [后盾人](https://doc.houdunren.com/)  后盾人在线文档，前端学习及vscode插件推荐
 - [猫爪导航🐱](https://v2fy.com/)  各种工具及资源的推荐
 - [正则大全](https://any86.github.io/any-rule/)  提供常见的正则匹配
-
 - [BT下载Tracker](https://trackerslist.com/#/zh)  提高BT下载速度
+
+
+
+## Go相关项目
+
+?> 为以后转行做准备
+
+### [gotests](https://github.com/cweill/gotests)
+
+自动生成 Go 语言测试代码的工具。该项目基于表驱动测试法（TableDrivenTests）自动生成测试代码，表驱动测试法是创建一张数据表格，每一行为输入和预期输出值，然后用这张表格的数据测试代码
+
+
+
+
 
