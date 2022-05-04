@@ -136,7 +136,7 @@ AwesomeProjects 收集整理工作及生活中看到的高质量、有趣的开�
 
 - [vcard-personal-portfolio](https://github.com/codewithsadee/vcard-personal-portfolio)  用来展示个人信息的网站
 
-## 项目
+### 项目
 
 - [JustAuth](https://github.com/justauth/JustAuth)
 
@@ -148,7 +148,7 @@ AwesomeProjects 收集整理工作及生活中看到的高质量、有趣的开�
 
   面向开发人员梳理的代码安全指南，旨在梳理 API 层面的风险点并提供详实可行的安全编码方案。
 
-## github相关
+### github相关
 
 - [Repobeats](https://repobeats.axiom.co/)
 
@@ -223,7 +223,7 @@ AwesomeProjects 收集整理工作及生活中看到的高质量、有趣的开�
   GitHub 个人资料奖杯 🏆在您的自述文件中添加动态生成的 GitHub Stat Trophies
 
 
-## 工具
+### 工具
 
 - [rembg](https://github.com/danielgatis/rembg)
 
@@ -231,11 +231,11 @@ AwesomeProjects 收集整理工作及生活中看到的高质量、有趣的开�
 
   
 
-## 博客美化
+### 博客美化
 
 - [一言](https://hitokoto.cn/#)  为网站提供一句话服务，一句话，可以是动漫中的台词，也可以是网络上的各种小段子。
 
-## 其他
+### 其他
 
 - [后盾人](https://doc.houdunren.com/)  后盾人在线文档，前端学习及vscode插件推荐
 - [猫爪导航🐱](https://v2fy.com/)  各种工具及资源的推荐
@@ -244,7 +244,7 @@ AwesomeProjects 收集整理工作及生活中看到的高质量、有趣的开�
 
 
 
-## Go相关项目
+### Go相关项目
 
 ?> 为以后转行做准备
 
@@ -274,7 +274,7 @@ AwesomeProjects 收集整理工作及生活中看到的高质量、有趣的开�
 
 
 
-## Python项目
+### Python项目
 
 - [pikepdf](https://github.com/pikepdf/pikepdf) 用于读取和写入 PDF 文件的 Python 库
 
