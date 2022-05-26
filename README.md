@@ -2,6 +2,13 @@
 
 AwesomeProjects 收集整理工作及生活中看到的高质量、有趣的开源项目，并将他们进行归类。省的浏览器一堆收藏。
 
+### 云原生
+
+- [sealer](https://github.com/sealerio/sealer)  sealer[ˈsiːlər]是一款分布式应用打包交付运行的解决方案，通过把分布式应用及其数据库中间件等依赖一起打包以解决应用整个集群整体交付问题。 sealer构建出来的产物我们称之为"集群镜像", 集群镜像里内嵌了一个kubernetes, 解决了分布式应用的交付一致性问题。 集群镜像可以push到registry中共享给其他用户使用，也可以在官方仓库中找到非常通用的分布式软件直接使用。
+- [sealos](https://github.com/labring/sealos) **一条命令部署 Kubernetes 高可用集群**
+- [KubeGems](https://github.com/kubegems/kubegems)  一款超强大面向云原生的通用开源 PaaS 管理平台，支持 Argo CD、Istio 等 30+ 开源服务
+- [Porter](https://github.com/porter-dev/porter) 一个由 Kubernetes 驱动的 PaaS 系统（Heroku 开源平替版)
+
 ### Git
 
 - [git-cliff](https://github.com/orhun/git-cliff)  一款**基于 Git 历史记录**自动生成日志变更文件。
@@ -32,10 +39,18 @@ AwesomeProjects 收集整理工作及生活中看到的高质量、有趣的开�
 
   Kustomizer 是一个比较有新意的软件包管理器，用于将 Kubernetes 的配置清单打包成 OCI 镜像，然后推送到 OCI 镜像仓库。还可以在线修改配置更新镜像。
 
+- [Kubectl-Ice](https://github.com/NimbleArchitect/kubectl-ice/releases)  一款超强大的 Kubernetes Pod 资源终端管理工
+
+- [Kube-capacity CLI](https://github.com/robscott/kube-capacity)
+
+  `Kube-capacity` 是一个简单而强大的 `CLI`，它提供了`Kubernetes`集群中资源请求、限制和利用率的概览。它将输出的最佳部分结合`kubectl top`到`kubectl describe`一个易于使用的集中于集群资源的 `CLI` 中。
+
+### prometheus
+
+- [karma](https://github.com/prymitive/karma)  一款超高颜值的 Alertmanager 可视化面板
 
 
-
-### 浏览器
+### 浏览器插件
 
 - [Neverinstall](https://neverinstall.com/)
 
@@ -46,7 +61,7 @@ AwesomeProjects 收集整理工作及生活中看到的高质量、有趣的开�
   Chrome 最强大的界面 🔥，一款浏览器插件。
 
   借助 Omni，您可以像专业人士一样使用 Chrome。使用简单的命令界面管理选项卡、书签、浏览器历史记录、执行各种操作等等。
-  
+
   🗄 切换、打开、关闭和搜索您的标签
   📚 浏览和管理您的书签
   🔍 搜索您的浏览历史记录
@@ -58,31 +73,50 @@ AwesomeProjects 收集整理工作及生活中看到的高质量、有趣的开�
   🌙黑暗模式
   ...... 以及更多 - 全部免费且无需登录！
 
+- [github-x](https://github.com/riskers/GithubX)  款增强 Github 体验的 Chrome 插件
+
+- [Bilibili-Evolved](https://github.com/the1812/Bilibili-Evolved)  强大的哔哩哔哩增强脚本, 供了非常多开箱即用的功能比如广告删除、夜间模式.
+
+- [Automa ](https://github.com/Kholid060/automa)  一个用于 Chrome 浏览器自动化的插件，从自动填写表格、执行重复性任务、截屏、抓取网站数据等等，完全可以根据你自己的需求来决定如何使用。
+
+
+
 ### Redis
 
-- [**Another Redis Desktop Manager**](https://gitee.com/qishibo/AnotherRedisDesktopManager)  redis桌面管理工具，可以运行于Linux、Windows、Mac三大平台。
+- [Another Redis Desktop Manager](https://gitee.com/qishibo/AnotherRedisDesktopManager)  redis桌面管理工具，可以运行于Linux、Windows、Mac三大平台。
 
 ### 文档
 
 - [Mark text](https://github.com/marktext/marktext)  另一款markdown编辑器
 
-### Mac
+### Mac软件
 
 - [MenubarX](https://menubarx.app/)
 
   MenubarX 是一款强大的 Mac 菜单栏浏览器，可以在菜单栏固定任何网页，就像原生 App 一样使用，支持调整窗口大小。
-  
+
 - [touchbar-systemmonitor](https://github.com/spagnuolocarmine/touchbar-systemmonitor)
 
   touchbar 系统监视器, 可以在 touchbar 上显示 CPU, 内存，网络流量，磁盘使用量，电池信息等。
-  
+
 - [Raycast ](https://www.raycast.com/)
 
   Raycast 是一款类似 Spotlight 和 Alfred 的启动器, 提供了更多功能。
-  
+
 - [wrap 很棒的终端软件](https://www.warp.dev/)
 
   WARP 是一个速度极快、基于 RUST 的终端，从头开始重新构想，可以像现代应用程序一样工作。
+
+- [Tart](https://github.com/cirruslabs/tart)
+
+  Tart 是一个虚拟化工具集，用于构建、运行和管理 Apple Silicon 芯片 macOS 上的虚拟机，主要目的是为 CI 流水线的特殊任务提供运行环境。主要亮点：
+
+  - 使用 macOS 最新的虚拟化框架 `Virtualization.Framework` 来创建虚拟机。
+  - 可以从 OCI 镜像仓库中拉取/推送虚拟机镜像。
+  - 可以使用 Tart 的 Packer 插件来自动化虚拟机创建流程。
+  - 内置 CI 集成。
+
+- [bob](https://github.com/ripperhe/Bob)  一款免费的 Mac 端翻译软件，支持划词翻译和截图翻译，甚至还有语音合成功能，现在支持很多翻译引擎。
 
 ### Linux
 
@@ -100,11 +134,11 @@ AwesomeProjects 收集整理工作及生活中看到的高质量、有趣的开�
   - 支持剪贴板输入输出，复制内容处理后可直接粘贴
   - **支持文件、目录的输入和输出**；支持文件备份
 
-- [oh my zsh](https://github.com/ohmyzsh/ohmyzsh)  
+- [oh my zsh](https://github.com/ohmyzsh/ohmyzsh)
 
   美化shell
 
-- [asciinema ](https://asciinema.org/)  
+- [asciinema ](https://asciinema.org/)
 
   是一个免费的开源解决方案，用于记录终端会话并在网络上共享它们。对终端命令进行录制并分享，不是录屏哈。
 
@@ -118,9 +152,9 @@ AwesomeProjects 收集整理工作及生活中看到的高质量、有趣的开�
 
 - Fiddler
 
-- wireshark 
+- wireshark
 
-- Charles 
+- Charles
 
 - [Proxyman](https://proxyman.io/)
 
@@ -149,6 +183,17 @@ AwesomeProjects 收集整理工作及生活中看到的高质量、有趣的开�
   面向开发人员梳理的代码安全指南，旨在梳理 API 层面的风险点并提供详实可行的安全编码方案。
 
 ### github相关
+
+- 指定某张图片在 Dark 模式下的显示效果
+
+  ```html
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/25423296/163456776-7f95b81a-f1ed-45f7-b7ab-8fa810d529fa.png">
+    <img alt="Shows an illustrated sun in light color mode and a moon with stars in dark color mode." src="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
+  </picture>
+  ```
+
+
 
 - [Repobeats](https://repobeats.axiom.co/)
 
@@ -227,9 +272,9 @@ AwesomeProjects 收集整理工作及生活中看到的高质量、有趣的开�
 
 - [rembg](https://github.com/danielgatis/rembg)
 
-  Rembg 是一个去除图像背景的工具。开发者已经封装好了，用法非常简单，可以进入下方的链接查看。	
+  Rembg 是一个去除图像背景的工具。开发者已经封装好了，用法非常简单，可以进入下方的链接查看。
 
-  
+
 
 ### 博客美化
 
@@ -265,12 +310,16 @@ AwesomeProjects 收集整理工作及生活中看到的高质量、有趣的开�
   这个开源项目包含 Go 学习资料、Go 进阶资料、实用工具类、DDD 项目落地、Go-kit 、Go-Micro 、Go 推送平台、微服务实践等相关内容。
 
 - [monitoror](https://github.com/monitoror/monitoror)
-  
+
   平铺的监控工具。安装简单配置方便的“监控墙”，所有监控指标以平铺的方式展示，美观且一目了然。支持 Linux、macOS 和 Windows 主流操作系统
-  
+
 - [casdoor](https://github.com/casdoor/casdoor)
 
   提供登陆界面的身份访问管理平台。提供中文界面的用户管理后台，支持多种第三方登录、单点登录以及手机/邮箱验证码、找回密码等功能
+
+- [GoFound ](https://gitee.com/tompeppa/gofound)
+
+​	一个golang实现的全文检索引擎 基于平衡二叉树+正排索引、倒排索引实现 可支持亿级数据，毫秒级查询。使用简单，使用	http接口，任何系统都可以使用。
 
 
 
@@ -284,5 +333,9 @@ AwesomeProjects 收集整理工作及生活中看到的高质量、有趣的开�
 
   Python 的内存分析器。帮你分析 Python 应用的内存使用情况，找到内存泄漏的原因、占用内存多的代码、内存使用率高的原因。支持生成内存报告（火焰图、表格、树状图）和实时报告等模式，以及统计结果等功能
 
-- 
+- [Geopandas](https://geopandas.readthedocs.io/)一行代码算出每个省面积的神器
+
+- [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)  百度飞桨ocr识别
+
+- [PPOCRLabel](https://github.com/PaddlePaddle/PaddleOCR/tree/release/2.5/PPOCRLabel)  OCR半自动数据标注工具
 
