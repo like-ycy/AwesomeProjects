@@ -44,6 +44,26 @@ AwesomeProjects 收集整理工作及生活中看到的高质量、有趣的开�
 - [Kube-capacity CLI](https://github.com/robscott/kube-capacity)
 
   `Kube-capacity` 是一个简单而强大的 `CLI`，它提供了`Kubernetes`集群中资源请求、限制和利用率的概览。它将输出的最佳部分结合`kubectl top`到`kubectl describe`一个易于使用的集中于集群资源的 `CLI` 中。
+  
+- [klock](https://github.com/robert-nemet/klock)
+
+  klock 是一个资源锁，通过 CRD 来锁定 Kubernetes 中的资源，以防止被误删除或者误更新。例如：
+
+  ```yaml
+  apiVersion: klock.rnemet.dev/v1
+  kind: Lock
+  metadata:
+    name: lock-sample
+    namespace: test
+  spec:
+    operations:
+      - UPDATE
+      - DELETE
+    matcher:
+      test: test
+  ```
+
+  这样你就无法对打了标签 `test: test` 的资源执行更新或者删除操作。
 
 ### prometheus
 
@@ -147,6 +167,8 @@ AwesomeProjects 收集整理工作及生活中看到的高质量、有趣的开�
   shell 历史记录工具
 
   Atuin 🐢 使用 SQLite 数据库取代了你现有的 shell 历史，并为你的命令记录了额外的内容，可以通过一个非常美观的 UI 界面进行操作。此外，它还通过 Atuin 服务器，在节点之间提供可选的、完全加密的历史记录同步功能。
+  
+- [gum](https://github.com/charmbracelet/gum)  用于制作迷人 shell 脚本的工具。在您的脚本和别名中利用[Bubbles](https://github.com/charmbracelet/bubbles)和[Lip GLoss](https://github.com/charmbracelet/lipgloss)的强大功能，而无需编写任何 Go 代码！
 
 ### 抓包工具
 
@@ -276,9 +298,10 @@ AwesomeProjects 收集整理工作及生活中看到的高质量、有趣的开�
 
 
 
-### 博客美化
+### 博客相关
 
 - [一言](https://hitokoto.cn/#)  为网站提供一句话服务，一句话，可以是动漫中的台词，也可以是网络上的各种小段子。
+- [Astro](https://github.com/withastro/astro) Astro 是一款现轻量级的静态网站生成器，在 GitHub 上已经斩获 18K 的 Star。该项目可以提供详细的中文教程，只要你具备基本的前端编程基础，就能快速搭建一个属于自己的静态网站。
 
 ### 其他
 
@@ -338,4 +361,6 @@ AwesomeProjects 收集整理工作及生活中看到的高质量、有趣的开�
 - [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)  百度飞桨ocr识别
 
 - [PPOCRLabel](https://github.com/PaddlePaddle/PaddleOCR/tree/release/2.5/PPOCRLabel)  OCR半自动数据标注工具
+
+- [APIFlask](https://github.com/apiflask/apiflask)  APIFlask是一个基于[Flask](https://github.com/pallets/flask)和 [marshmallow-code](https://github.com/marshmallow-code)项目的轻量级Python Web API框架。它易于使用，高度可定制，ORM / ODM不可知，并且与Flask生态系统100%兼容。
 
