@@ -64,6 +64,22 @@ AwesomeProjects 收集整理工作及生活中看到的高质量、有趣的开�
   ```
 
   这样你就无法对打了标签 `test: test` 的资源执行更新或者删除操作。
+  
+- [Kueue](https://github.com/kubernetes-sigs/kueue)  
+
+  Kueue 是开源的云原生作业队列控制器，它充分利用了 Kubernetes 现有组件的各种成熟的功能，比如节点自动伸缩由 cluster-autoscaler 负责，Pod 调度由 kube-scheduler 负责，作业生命周期管理由 kube-controller-manager 负责。同时提供了扩展 API 来合理分配资源配额，还提供了 hooks 用来集成其他定制的批处理作业 API。
+
+- [kconf](https://github.com/simontheleg/konf-go)  Konf 是一个轻量级 kubeconfig 管理工具，可以同时在不同的终端窗口中使用不同的 kubeconfig，也不会创建子 shell，速度很快。
+
+- [mirrord](https://github.com/metalbear-co/mirrord)  mirrord 可以让你的本地应用直接对接到 Kubernetes 中，看起来就像是直接运行在 Kubernetes 中一样，但实际上不需要部署到 Kubernetes 中。还提供了 VS Code 插件与 IntelliJ 插件。
+
+- [Paralus](https://github.com/paralus/paralus)  Paralus 是开源的零信任解决方案，可以自定义角色、身份提供商，以及创建不同权限的自定义规则等功能，支持 Kubernetes 多集群环境，可以控制所有集群的访问权限。
+
+- [Depot](https://depot.dev)  这个工具可以在云端远程构建 Docker 镜像，比 docker build 的构建速度更快，支持 Apple M1。
+
+- [Dockle](https://github.com/goodwithtech/dockle)   Dockle 是用于安全的容器镜像 Linter，可以帮助我们构建最佳实践的安全 Docker 镜像，易于上手。
+
+- [buildg](https://github.com/ktock/buildg)  这是一个基于 Buildkit 的 Dockerfile 实时调试工具，支持断点调试，提供了交互式 shell，同时还提供了 VS Code 等 IDE 插件，可以直接在 IDE 中调试。
 
 ### prometheus
 
