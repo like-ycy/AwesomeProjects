@@ -39,8 +39,29 @@ AwesomeProjects 收集整理工作及生活中看到的高质量、有趣的开�
 - [static](https://github.com/chainguard-images/static)
 
   static 与 `busybox`、`alpine` 和 `google/distroless` 类似，都属于基础镜像范畴，不过它是专门用来运行静态编译二进制文件的。
+  
+- [Copacetic](https://github.com/project-copacetic/copacetic)  Copacetic 是一个使用 Go 语言编写的 CLI 工具，它可以根据 Trivy 等工具的漏洞扫描结果直接修补正在运行的容器，不需要上游重新构建完整的镜像。
+
+### eBPF
+
+- [Caretta](https://github.com/groundcover-com/caretta)  这个项目可以在 Grafana 监控面板中显示 K8s Service 之间的依赖关系。底层使用的是 eBPF，对应用无侵入。
+- [NetWorth](https://github.com/ShubhamPalriwala/NetWorth)  这个项目使用 eBPF 与 XDP 来监控主机的入站流量，包含地理位置、网络协议类型或数量、CPU 使用率等等，并使用 Grafana 监控面板来展示监控数据。
 
 ### Kubernetes
+
+- [Lens](https://k8slens.dev/)  
+
+  Lens 是一个**Kubernetes IDE**，在桌面环境下使用它，来开发、调试、DevOps、运维和监控。
+
+  它有很多强大的功能，其中：Catalog、Hotbar、命令面板、监控、智能终端、资源模板、Helm Chart 管理和插件 这些功能一定要试一试，体验飞升！
+
+- [krew](https://github.com/kubernetes-sigs/krew)  
+
+  Krew 是 `kubectl` 命令行工具的插件管理器。
+
+  Krew 可以帮助你:
+
+  •发现 kubectl 插件•将它们安装到您的机器上•并保持安装的插件是最新的
 
 - [Kubermetrics](https://github.com/oslabs-beta/kubermetrics)  
 
@@ -192,6 +213,114 @@ AwesomeProjects 收集整理工作及生活中看到的高质量、有趣的开�
   - `Exchange`：让集群服务流量重定向到本地，实现快速验证本地版本和调试排查问题
   - `Mesh`：创建路由规则重定向特定流量，实现多人协作场景下互不影响的本地调试
   - `Preview`：暴露本地服务到集群，实现无需发布即可在线预览集成效果
+  
+- [KubeShark](https://github.com/kubeshark/kubeshark)
+
+  适用于 Kubernetes 的 API 流量查看器，可深入了解 Kubernetes 集群内容器和 Pod 之间的所有 API 流量和有效负载
+
+  Kubeshark 是 kubernetes 的 API Traffic Viewer，它提供对进出 Kubernetes 集群内容器和 Pod 的所有 API 流量和有效负载的深度可见性和监控。
+
+  想想 Chrome Dev Tools，TCPDump 和 Wireshark 的组合，它们为 Kubernetes 重新发明。
+  
+- [kubernetes-chatgpt-bot](https://github.com/robusta-dev/kubernetes-chatgpt-bot) 
+
+  这是一个适用于 Slack 的 ChatGPT 机器人，只要有监控告警发送到 Slack 频道中，你就可以通过机器人向 ChatGPT 咨询如何解决这个告警，ChatGPT 将会给出一个较为详细的解决方案。
+
+- [Pluto](https://github.com/FairwindsOps/pluto)  这是一个命令行工具，用来查找 Kubernetes 集群中已弃用的 API 版本。
+
+- [k8z](https://github.com/gotomicro/k8z)
+
+  k8z 意在 K8s 业务层面，提供一个方便好用的 K8s 集群可视化工具集。目前包含以下功能：
+
+  - 终端：连接到集群任意 Pod 容器上，方便调试
+  - Tcpdump：对集群内容器进行 tcpdump 抓包，可直接展示抓包信息，也可拉起 wireshark 实时分析
+  - Files：可将本机文件上传至集群 Pod 里或从集群 Pod 上下载文件
+  - Profiling：对开启了 pprof 的 go 服务进行 profile，请求 profile 并绘制火焰图方便分析
+  - Pod HTTP proxy: 代理 http 请求到集群内 Pod 上，方便一些本地网络和集群 Pod 网络不通的场景调试接口使用
+  - Debug：复制一个 Pod 并新建一个终端连接上去，方便针对 crash 的 Pod 手动调试故障
+  - ConfigMap：提供方便的编辑器来管理集群内的 ConfigMap
+
+- [vesta](https://github.com/kvesta/vesta)  
+
+  vesta 是一款集容器扫描，Docker 和 Kubernetes 配置基线检查于一身的工具。检查内容包括镜像或容器中包含漏洞版本的组件，同时根据云上实战渗透经验检查 Docker 以及 Kubernetes 的危险配置。
+
+- [kubescape](https://github.com/kubescape/kubescape)
+
+  Kubescape 是一个开源的 Kubernetes 安全平台。它的功能包括 `风险分析`、`安全合规性` 和 `错误配置扫描`。针对 DevSecOps 从业者或平台工程师，提供易于使用的 CLI 界面、灵活的输出格式和自动扫描功能。同时对于小集群提供了免费的 在线 面板工具，它为 Kubernetes 用户和管理员节省了宝贵的时间、精力和资源。
+
+### Kubectl 插件
+
+安装方式：kubectl krew install [插件名称]
+
+- [access-matrix](https://github.com/corneliusweig/rakkess) 
+
+  显示服务器资源的 RBAC 访问矩阵。
+
+  您是否曾经想过您对所提供的 kubernetes 集群拥有哪些访问权限?对于单个资源，您可以使用`kubectl auth can-i` 列表部署，但也许您正在寻找一个完整的概述?这就是它的作用。它列出当前用户和所有服务器资源的访问权限，类似于`kubectl auth can-i --list`。
+
+- [ca-cert](https://github.com/ahmetb/kubectl-extras)   打印当前集群的 PEM CA 证书
+
+- [cert-manager](https://github.com/jetstack/cert-manager)  用来管理集群内的证书资源？
+
+- [cost](https://github.com/kubecost/kubectl-cost)  
+
+  查看集群成本信息。
+
+  `kubectl-cost` 是一个 kubectl 插件，通过 kubeccost api 提供简单的 CLI 访问 Kubernetes 成本分配指标。它允许开发人员、devops 和其他人快速确定 Kubernetes 工作负载的成本和效率。
+
+- [ctx](https://github.com/ahmetb/kubectx)  在 kubeconfig 中切换上下文
+
+- [deprecations](https://github.com/rikatz/kubepug)  检查集群中已经弃用的对象。一般用在升级 K8S 之前做检查。又叫 **KubePug**
+
+- [df-pv](https://github.com/yashbhutwala/kubectl-df-pv)  查看 pv 使用情况
+
+- [get-all](https://github.com/corneliusweig/ketall)  真正能 get 到 Kubernetes 的所有资源
+
+- [images](https://github.com/chenjiandongx/kubectl-images)  显示集群中使用的容器镜像
+
+- [kubesec-scan](https://github.com/controlplaneio/kubectl-kubesec)  使用 kubesec.io 扫描 Kubernetes 资源
+
+- [neat](https://github.com/itaysk/kubectl-neat)  从Kubernetes显示中删除杂乱以使其更具可读性
+
+- [node-shell](https://github.com/kvaps/kubectl-node-shell) 通过 kubectl 在一个 node 上生成一个 root shell
+
+- [ns](https://github.com/ahmetb/kubectx)  切换 Kubernetes 的 ns
+
+- [outdated](https://github.com/replicatedhq/outdated) 查找集群中运行的过时容器镜像。
+
+- [popeye](https://popeyecli.io/) 扫描集群以发现潜在的资源问题。就是 K9S 也在使用的 popeye
+
+- [resource-capacity](https://github.com/robscott/kube-capacity)  提供资源请求、限制和使用率的概览。
+
+- [score](https://github.com/zegl/kube-score) Kubernetes 静态代码分析
+
+- [sniff](https://github.com/eldadru/ksniff) 强烈推荐，之前有次 POD 网络出现问题就是通过这个帮助来进行分析的。它会使用 tcpdump 和 wireshark 在 pod 上启动远程抓包
+
+- [starboard](https://github.com/aquasecurity/starboard) 也是一个安全扫描工具
+
+- tail  将所有匹配 pod 的所有容器的日志流。按 service、replicaset、deployment 等匹配 pod。调整到变化的集群 —— 当 pod 落入或退出选择时，将从日志中添加或删除它们
+
+- [trace](https://github.com/iovisor/kubectl-trace) 使用系统工具跟踪 Kubernetes pod 和 node
+
+- tree 一个 `kubectl` 插件，通过对 Kubernetes 对象的 `ownersReferences` 来探索它们之间的所有权关系
+
+- [tunnel](https://github.com/omrikiei/ktunnel) 
+
+  集群和你自己机器之间的反向隧道.
+
+  它允许您将计算机作为集群中的服务公开，或者将其公开给特定的部署。这个项目的目的是为这个特定的问题提供一个整体的解决方案 (从 kubernetes pod 访问本地机器)
+
+- [warp](https://github.com/ernoaapa/kubectl-warp)
+
+  在 Pod 中同步和执行本地文件
+
+  它创建临时 Pod，并将本地文件同步到所需的容器，并执行任何命令。
+
+  例如，这可以用于在 Kubernetes 中构建和运行您的本地项目，其中有更多的资源、所需的架构等，同时在本地使用您的首选编辑器。
+
+- [who-can](https://github.com/aquasecurity/kubectl-who-can)  显示谁具有访问 Kubernetes 资源的 RBAC 权限
+
+
 
 ###  prometheus
 
@@ -279,6 +408,10 @@ AwesomeProjects 收集整理工作及生活中看到的高质量、有趣的开�
 - [bob](https://github.com/ripperhe/Bob)  
 
   一款免费的 Mac 端翻译软件，支持划词翻译和截图翻译，甚至还有语音合成功能，现在支持很多翻译引擎。
+  
+- [LocalSend](https://github.com/localsend/localsend)
+
+  `localsend` 是一个使用 Flutter 开发的 `AirDrop` 开源跨平台替代品，可以将文件共享到附近的设备，该应用允许你通过本地 LAN 网络发送文件和消息。不需要互联网，不需要外部服务器。一切都在 wifi 网络中本地发生。
 
 ### Linux
 
