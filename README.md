@@ -2,6 +2,44 @@
 
 AwesomeProjects 收集整理工作及生活中看到的高质量、有趣的开源项目，并将他们进行归类。省的浏览器一堆收藏。
 
+### ChatGPT 相关
+
+- [openai-translator](https://github.com/yetone/openai-translator) 
+
+  一个基于 OpenAI 的翻译插件 + 桌面端应用，支持翻译、润色和总结三种模式，以及 55 种语言的互相翻译。
+
+- [ChatGPT 快捷键](https://github.com/rockbenben/ChatGPT-Shortcut) 
+
+  当你想问 ChatGPT 一些问题，却得不到你想要的答案，此时你可以试一试 ChatGPT Shortcut。这是一个让你使用 ChatGPT 时生产力翻倍的快捷指令网站。
+
+  你只需在该开源项目中复制提示词，稍加修改后发送给 ChatGPT，就能获得你期望的输出，让你的生产力加倍！
+
+- [wukong-robot](https://github.com/liuhaogui/wukong-robot)
+
+  一个智能语音对话机器人，可以以语音或文本方式与用户进行对话。其特点是支持个性化定制和插件扩展，可以根据用户的需求进行灵活定制和扩展。
+
+  比如可以集成 Open AI、腾讯、百度、科大讯飞等语音识别技术，同时还能和 ChatGPT、Siri、小爱同学进行联动。
+
+- [ChatPaper](https://github.com/kaixindelele/ChatPaper) 
+
+  该项目可根据用户关键词下载 arXiv 上的最新论文，利用 ChatGPT3.5 API 强大的归纳能力，将其浓缩成固定格式，文字少且易读。
+
+- [川虎 ChatGPT](https://github.com/GaiZhenbiao/ChuanhuChatGPT)  
+
+  该项目为 ChatGPT API 提供了一个 Web 图形界面，在本地部署后，你只需填上自己的 Key，便能直接使用。
+
+- [roomGPT](https://github.com/Nutlope/roomGPT) 
+
+  你只需要给你的房间拍一张照，或是房间的 3D 效果图，并将其上传，即可用 AI 生成对应的梦幻房间效果图。
+
+- [DocsGPT](https://github.com/arc53/DocsGPT) 
+
+  是一种尖端的开源解决方案，可简化在项目文档中查找信息的过程。通过集成强大的 **GPT** 模型，开发人员可以轻松提出有关项目的问题并获得准确的答案。
+
+- [chatgpt-on-wechat](https://github.com/zhayujie/chatgpt-on-wechat) 
+
+  基于 ChatGPT 的微信聊天机器人，通过 [ChatGPT](https://github.com/openai/openai-python) 接口生成对话内容，使用 [itchat](https://github.com/littlecodersh/ItChat) 实现微信消息的接收和自动回复
+
 ### 云原生
 
 - [sealer](https://github.com/sealerio/sealer)  
@@ -40,12 +78,19 @@ AwesomeProjects 收集整理工作及生活中看到的高质量、有趣的开�
 
   static 与 `busybox`、`alpine` 和 `google/distroless` 类似，都属于基础镜像范畴，不过它是专门用来运行静态编译二进制文件的。
   
-- [Copacetic](https://github.com/project-copacetic/copacetic)  Copacetic 是一个使用 Go 语言编写的 CLI 工具，它可以根据 Trivy 等工具的漏洞扫描结果直接修补正在运行的容器，不需要上游重新构建完整的镜像。
+- [Copacetic](https://github.com/project-copacetic/copacetic)  
+
+  Copacetic 是一个使用 Go 语言编写的 CLI 工具，它可以根据 Trivy 等工具的漏洞扫描结果直接修补正在运行的容器，不需要上游重新构建完整的镜像。
 
 ### eBPF
 
-- [Caretta](https://github.com/groundcover-com/caretta)  这个项目可以在 Grafana 监控面板中显示 K8s Service 之间的依赖关系。底层使用的是 eBPF，对应用无侵入。
-- [NetWorth](https://github.com/ShubhamPalriwala/NetWorth)  这个项目使用 eBPF 与 XDP 来监控主机的入站流量，包含地理位置、网络协议类型或数量、CPU 使用率等等，并使用 Grafana 监控面板来展示监控数据。
+- [Caretta](https://github.com/groundcover-com/caretta)  
+
+  这个项目可以在 Grafana 监控面板中显示 K8s Service 之间的依赖关系。底层使用的是 eBPF，对应用无侵入。
+
+- [NetWorth](https://github.com/ShubhamPalriwala/NetWorth)  
+
+  这个项目使用 eBPF 与 XDP 来监控主机的入站流量，包含地理位置、网络协议类型或数量、CPU 使用率等等，并使用 Grafana 监控面板来展示监控数据。
 
 ### Kubernetes
 
@@ -226,7 +271,9 @@ AwesomeProjects 收集整理工作及生活中看到的高质量、有趣的开�
 
   这是一个适用于 Slack 的 ChatGPT 机器人，只要有监控告警发送到 Slack 频道中，你就可以通过机器人向 ChatGPT 咨询如何解决这个告警，ChatGPT 将会给出一个较为详细的解决方案。
 
-- [Pluto](https://github.com/FairwindsOps/pluto)  这是一个命令行工具，用来查找 Kubernetes 集群中已弃用的 API 版本。
+- [Pluto](https://github.com/FairwindsOps/pluto)  
+
+  这是一个命令行工具，用来查找 Kubernetes 集群中已弃用的 API 版本。
 
 - [k8z](https://github.com/gotomicro/k8z)
 
@@ -247,10 +294,16 @@ AwesomeProjects 收集整理工作及生活中看到的高质量、有趣的开�
 - [kubescape](https://github.com/kubescape/kubescape)
 
   Kubescape 是一个开源的 Kubernetes 安全平台。它的功能包括 `风险分析`、`安全合规性` 和 `错误配置扫描`。针对 DevSecOps 从业者或平台工程师，提供易于使用的 CLI 界面、灵活的输出格式和自动扫描功能。同时对于小集群提供了免费的 在线 面板工具，它为 Kubernetes 用户和管理员节省了宝贵的时间、精力和资源。
+  
+- [ContainerSSH](https://github.com/ContainerSSH/ContainerSSH)  
+
+  ContainerSSH 是一个为容器环境设计的 SSH 服务器，它提供了一种连接到容器的简单方法，以及在容器中执行命令和脚本的机制。
 
 ### Kubectl 插件
 
 安装方式：kubectl krew install [插件名称]
+
+- [krew plugins](https://krew.sigs.k8s.io/plugins/)  kubectl 插件列表
 
 - [access-matrix](https://github.com/corneliusweig/rakkess) 
 
@@ -258,9 +311,13 @@ AwesomeProjects 收集整理工作及生活中看到的高质量、有趣的开�
 
   您是否曾经想过您对所提供的 kubernetes 集群拥有哪些访问权限?对于单个资源，您可以使用`kubectl auth can-i` 列表部署，但也许您正在寻找一个完整的概述?这就是它的作用。它列出当前用户和所有服务器资源的访问权限，类似于`kubectl auth can-i --list`。
 
-- [ca-cert](https://github.com/ahmetb/kubectl-extras)   打印当前集群的 PEM CA 证书
+- [ca-cert](https://github.com/ahmetb/kubectl-extras)   
 
-- [cert-manager](https://github.com/jetstack/cert-manager)  用来管理集群内的证书资源？
+  打印当前集群的 PEM CA 证书
+
+- [cert-manager](https://github.com/jetstack/cert-manager)  
+
+  用来管理集群内的证书资源
 
 - [cost](https://github.com/kubecost/kubectl-cost)  
 
@@ -268,41 +325,77 @@ AwesomeProjects 收集整理工作及生活中看到的高质量、有趣的开�
 
   `kubectl-cost` 是一个 kubectl 插件，通过 kubeccost api 提供简单的 CLI 访问 Kubernetes 成本分配指标。它允许开发人员、devops 和其他人快速确定 Kubernetes 工作负载的成本和效率。
 
-- [ctx](https://github.com/ahmetb/kubectx)  在 kubeconfig 中切换上下文
+- [ctx](https://github.com/ahmetb/kubectx) 
 
-- [deprecations](https://github.com/rikatz/kubepug)  检查集群中已经弃用的对象。一般用在升级 K8S 之前做检查。又叫 **KubePug**
+  在 kubeconfig 中切换上下文
 
-- [df-pv](https://github.com/yashbhutwala/kubectl-df-pv)  查看 pv 使用情况
+- [deprecations](https://github.com/rikatz/kubepug)  
 
-- [get-all](https://github.com/corneliusweig/ketall)  真正能 get 到 Kubernetes 的所有资源
+  检查集群中已经弃用的对象。一般用在升级 K8S 之前做检查。又叫 **KubePug**
 
-- [images](https://github.com/chenjiandongx/kubectl-images)  显示集群中使用的容器镜像
+- [df-pv](https://github.com/yashbhutwala/kubectl-df-pv)  
 
-- [kubesec-scan](https://github.com/controlplaneio/kubectl-kubesec)  使用 kubesec.io 扫描 Kubernetes 资源
+  查看 pv 使用情况
 
-- [neat](https://github.com/itaysk/kubectl-neat)  从Kubernetes显示中删除杂乱以使其更具可读性
+- [get-all](https://github.com/corneliusweig/ketall)  
 
-- [node-shell](https://github.com/kvaps/kubectl-node-shell) 通过 kubectl 在一个 node 上生成一个 root shell
+  真正能 get 到 Kubernetes 的所有资源
 
-- [ns](https://github.com/ahmetb/kubectx)  切换 Kubernetes 的 ns
+- [images](https://github.com/chenjiandongx/kubectl-images)  
 
-- [outdated](https://github.com/replicatedhq/outdated) 查找集群中运行的过时容器镜像。
+  显示集群中使用的容器镜像
 
-- [popeye](https://popeyecli.io/) 扫描集群以发现潜在的资源问题。就是 K9S 也在使用的 popeye
+- [kubesec-scan](https://github.com/controlplaneio/kubectl-kubesec)  
 
-- [resource-capacity](https://github.com/robscott/kube-capacity)  提供资源请求、限制和使用率的概览。
+  使用 kubesec.io 扫描 Kubernetes 资源
 
-- [score](https://github.com/zegl/kube-score) Kubernetes 静态代码分析
+- [neat](https://github.com/itaysk/kubectl-neat)  
 
-- [sniff](https://github.com/eldadru/ksniff) 强烈推荐，之前有次 POD 网络出现问题就是通过这个帮助来进行分析的。它会使用 tcpdump 和 wireshark 在 pod 上启动远程抓包
+  从Kubernetes显示中删除杂乱以使其更具可读性
 
-- [starboard](https://github.com/aquasecurity/starboard) 也是一个安全扫描工具
+- [node-shell](https://github.com/kvaps/kubectl-node-shell) 
 
-- tail  将所有匹配 pod 的所有容器的日志流。按 service、replicaset、deployment 等匹配 pod。调整到变化的集群 —— 当 pod 落入或退出选择时，将从日志中添加或删除它们
+  通过 kubectl 在一个 node 上生成一个 root shell
 
-- [trace](https://github.com/iovisor/kubectl-trace) 使用系统工具跟踪 Kubernetes pod 和 node
+- [ns](https://github.com/ahmetb/kubectx)  
 
-- tree 一个 `kubectl` 插件，通过对 Kubernetes 对象的 `ownersReferences` 来探索它们之间的所有权关系
+  切换 Kubernetes 的 ns
+
+- [outdated](https://github.com/replicatedhq/outdated) 
+
+  查找集群中运行的过时容器镜像。
+
+- [popeye](https://popeyecli.io/) 
+
+  扫描集群以发现潜在的资源问题。就是 K9S 也在使用的 popeye
+
+- [resource-capacity](https://github.com/robscott/kube-capacity)  
+
+  提供资源请求、限制和使用率的概览。
+
+- [score](https://github.com/zegl/kube-score) 
+
+  Kubernetes 静态代码分析
+
+- [sniff](https://github.com/eldadru/ksniff) 
+
+  强烈推荐，之前有次 POD 网络出现问题就是通过这个帮助来进行分析的。它会使用 tcpdump 和 wireshark 在 pod 上启动远程抓包
+
+- [starboard](https://github.com/aquasecurity/starboard) 
+
+  是一个安全扫描工具，
+
+- [tail](https://github.com/boz/kail)
+
+  将所有匹配 pod 的所有容器的日志流。按 service、replicaset、deployment 等匹配 pod。调整到变化的集群 —— 当 pod 落入或退出选择时，将从日志中添加或删除它们
+
+- [trace](https://github.com/iovisor/kubectl-trace) 
+
+  使用系统工具跟踪 Kubernetes pod 和 node
+
+- [tree](https://github.com/ahmetb/kubectl-tree)
+
+  一个 `kubectl` 插件，通过对 Kubernetes 对象的 `ownersReferences` 来探索它们之间的所有权关系
 
 - [tunnel](https://github.com/omrikiei/ktunnel) 
 
@@ -318,7 +411,9 @@ AwesomeProjects 收集整理工作及生活中看到的高质量、有趣的开�
 
   例如，这可以用于在 Kubernetes 中构建和运行您的本地项目，其中有更多的资源、所需的架构等，同时在本地使用您的首选编辑器。
 
-- [who-can](https://github.com/aquasecurity/kubectl-who-can)  显示谁具有访问 Kubernetes 资源的 RBAC 权限
+- [who-can](https://github.com/aquasecurity/kubectl-who-can)  
+
+  显示谁具有访问 Kubernetes 资源的 RBAC 权限
 
 
 
@@ -446,6 +541,14 @@ AwesomeProjects 收集整理工作及生活中看到的高质量、有趣的开�
 - [gum](https://github.com/charmbracelet/gum)  
 
   用于制作迷人 shell 脚本的工具。在您的脚本和别名中利用[Bubbles](https://github.com/charmbracelet/bubbles)和[Lip GLoss](https://github.com/charmbracelet/lipgloss)的强大功能，而无需编写任何 Go 代码！
+  
+- [erdtree](https://github.com/solidiquis/erdtree) 
+
+  一个支持可视化文件树和磁盘使用量的多线程资源分析器
+
+- [zellij](https://github.com/zellij-org/zellij) 
+
+  一个面向开发人员，面向运维的人以及任何喜欢终端的人的工作空间。类似的程序有时被称为“终端多路复用器”。
 
 ### 终端
 
@@ -612,6 +715,8 @@ AwesomeProjects 收集整理工作及生活中看到的高质量、有趣的开�
 - [kbar](https://github.com/timc1/kbar)  
 
   为你的站点提供命令面板界面的组件。这是一个即插即用的 React 组件，可以快速地为站点增加命令面板功能。让用户可以通过快捷键，灵活、交互式地访问网站。
+  
+- [mdBook](https://github.com/rust-lang/mdBook) Rust 官方开源的制作 Markdown 电子书工具，功能上类似 Gitbook。它可以将 Markdown 文件制作成在线书籍，支持代码高亮、可集成搜索、多主题等功能，简单易用非常适合创建教程、API 文档、开源书籍等。
 
 ### 其他
 
